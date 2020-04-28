@@ -30,5 +30,5 @@ def get_english_meaning(cons, emoticon)
     end 
   end 
    faces.include?(emoticon) == nil 
-   return "sorry, that emoticon was not found"
+   return "Sorry, that emoticon was not found"
 end 
