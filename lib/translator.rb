@@ -27,8 +27,8 @@ def get_english_meaning(cons, emoticon)
    faces.find do |style, face|
     if face[:japanese] == emoticon
       return style
-    elsif faces[1] == nil 
-      return "Sorry, that emoticon was not found"
-end 
-end 
+    end 
+  end 
+   faces.include?(emoticon) == nil 
+   return "sorry, that emoticon was not found"
 end 
