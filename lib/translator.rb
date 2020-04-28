@@ -20,7 +20,9 @@ def get_japanese_emoticon(cons, emoticon)
         return face[:japanese]
         end
       end
-    end 
+  faces.include?(emoticon) == nil 
+  return "Sorry, that emoticon was not found"
+end 
 
 def get_english_meaning(cons, emoticon)
  faces = load_library(cons)
